@@ -26,7 +26,7 @@ function App() {
           <Route path="work" element={<Workpage />} />
           <Route path="careers" element={<Careerspage />} />
           <Route path="team" element={<Teampage />} />
-          <Route path="contact" element={<Contactpage />} />
+          <Route path="contact" element={<Contactpage contactState={state["contact"]}/>} />
         </Route>
       </Routes>
     </div>
