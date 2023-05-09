@@ -27,9 +27,13 @@ const StyledLink = styled(Link)`
 `;
 
 export const ContactBtn = () => {
-    return (
-        <Button>
-            <StyledLink to="/contact"> Contact Us </StyledLink>
-        </Button>
-    );
+  const handleClick = () => {
+    window.scrollTo(0, 0);
+  };
+
+  return (
+    <Button onClick={handleClick}>
+      <StyledLink to="/contact"> Contact Us </StyledLink>
+    </Button>
+  );
 };

@@ -17,10 +17,10 @@ export const Navbar = () => {
                     <NavLink to="/"> <img src={logo} alt="logo" /> </NavLink>
                 </div>
                 <div className={`menu ${open ? 'open' : ''}`} onClick={menuClick}>
-                    <NavLink to="/work">Work</NavLink>
                     <NavLink to="/studio">Studio</NavLink>
-                    <NavLink to="/careers">Careers</NavLink>
+                    <NavLink to="/work">Work</NavLink>
                     <NavLink to="/team">Team</NavLink>
+                    <NavLink to="/careers">Careers</NavLink>
                     <NavLink to="/contact">Contact</NavLink>
                 </div>
                 <div className={`mobile-menu-cover ${open ? 'open' : ''}`}></div>

@@ -24,8 +24,8 @@ function App() {
           <Route index element={<Homepage />} />
           <Route path="studio" element={<Studiopage />} />
           <Route path="work" element={<Workpage />} />
-          <Route path="careers" element={<Careerspage />} />
           <Route path="team" element={<Teampage />} />
+          <Route path="careers" element={<Careerspage careersState={state["careers"]}/>} />
           <Route path="contact" element={<Contactpage contactState={state["contact"]}/>} />
         </Route>
       </Routes>
