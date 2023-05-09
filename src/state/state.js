@@ -61,5 +61,23 @@ export const initialState = {
                 errorMessage: "Please enter a message"
             }
         ]
+    },
+    team: {
+        staff: [
+            {id: 1, imgSrc: "staff-1.jpg", name: "Tony Scott", position: "Principal AIA, LEED AP BD+C"},
+            {id: 2, imgSrc: "staff-2.jpg", name: "Sarah Conner", position: "Principal, AIA, LEED AP BD+C"},
+            {id: 3, imgSrc: "staff-3.jpg", name: "Leslie Knope", position: "Principal, AIA, LEED AP BD+C"},
+            {id: 4, imgSrc: "staff-4.jpg", name: "Marty McFly", position: "Senior Associate, AIA"},
+            {id: 5, imgSrc: "staff-5.jpg", name: "Buffy Summers", position: "Senior Associate"},
+            {id: 6, imgSrc: "staff-6.jpg", name: "Liz Lemon", position: "Associate, AIA, LEED AP BD+C"},
+            {id: 7, imgSrc: "staff-7.jpg", name: "Felicity Smoak", position: "Associate, AIA, LEED AP BD+C"},
+            {id: 8, imgSrc: "staff-8.jpg", name: "John McClane", position: "Associate, AIA, LEED AP BD+C"},
+            {id: 9, imgSrc: "staff-9.jpg", name: "Kate Beckett", position: "Associate, AIA, LEED AP BD+C"},
+            {id: 10, imgSrc: "staff-10.jpg", name: "Erika Murphy", position: "Communications Coordinator"},
+            {id: 11, imgSrc: "staff-11.jpg", name: "Han Solo", position: "3D Studio Lead"},
+            {id: 12, imgSrc: "staff-12.jpg", name: "Elaine Benes", position: "Executive Assistant"},
+            {id: 13, imgSrc: "staff-13.jpg", name: "Hans Landa", position: "Executive Assistant"},
+            {id: 14, imgSrc: "staff-14.jpg", name: "Nora durst", position: "Executive Assistant"},
+        ]
     }
 }
