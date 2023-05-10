@@ -23,7 +23,7 @@ function App() {
         <Route path="/" element={<Layout />}>
           <Route index element={<Homepage />} />
           <Route path="studio" element={<Studiopage />} />
-          <Route path="work" element={<Workpage />} />
+          <Route path="work" element={<Workpage workState={state["work"]}/>} />
           <Route path="team" element={<Teampage teamState={state["team"]} />} />
           <Route path="careers" element={<Careerspage careersState={state["careers"]}/>} />
           <Route path="contact" element={<Contactpage contactState={state["contact"]}/>} />

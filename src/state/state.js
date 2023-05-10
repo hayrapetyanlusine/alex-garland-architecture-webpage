@@ -79,5 +79,13 @@ export const initialState = {
             {id: 13, imgSrc: "staff-13.jpg", name: "Hans Landa", position: "Executive Assistant"},
             {id: 14, imgSrc: "staff-14.jpg", name: "Nora durst", position: "Executive Assistant"},
         ]
+    },
+    work: {
+        galleryImages: [
+            {id: 1, src: "work-1.jpg", title: "Commercial"},
+            {id: 2, src: "work-2.jpg", title: "Residential"},
+            {id: 3, src: "work-3.jpg", title: "Education"},
+            {id: 4, src: "work-4.jpg", title: "Hospitality"},
+        ]
     }
 }
