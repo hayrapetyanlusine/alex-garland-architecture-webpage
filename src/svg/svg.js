@@ -37,3 +37,34 @@ export const TwitterSvg = (props) => (
         />
     </svg>
 )
+
+export const QuoteIconSvg = (props) => (
+    <svg
+        xmlns="http://www.w3.org/2000/svg"
+        xmlnsXlink="http://www.w3.org/1999/xlink"
+        viewBox="0 0 127.94 123"
+        {...props}
+    >
+        <image
+            xlinkHref="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGIAAAB7CAYAAACPfFVdAAAACXBIWXMAAAsSAAALEgHS3X78AAACiUlEQVR4nO3c0XHaQBRA0esk37gBUYEbwIWkylQQN2A34ApCBVSQD2mHjS1AQGS9t7pnRiMy4w+N77xVxGJAkiRJkiRJkiRJkiRJkiRJkiRJUjselr6AGXTAdnj9B9gveC2T/Vj6Av6jEmA3/HtPHyKFVkJ0wPNw7OgjvC56RVdqIUSJ8HM4A7wNR4plCeDb0hdwp48ROvrlqBxpZA4xFmFPwmmAvCHGIkDSaYCcIU5FSDsNkC/EqQiQeBogV4hzEaCfgnKkkynEluOzQlMRIE+Ijv5BbcfnCJB8WYIcIeqn5u2Jn3EivsC5JakZ0UNcWpKaET3EtjpOSb8sQewQU6ch/Y0aYoeYMg3gRMxqNfeGImqIqdPQjKghuupYhYghro3QRLSIIa5dlppYxr4vfQEjnqtjis1wPtD/z+kwx0XNLeJE3CL9VESbiClv8I1JPxXRQjxxDLG58LMflU8tbqrXaYJEC3Ht/aG2AR7pp6qc0wSJFuKpOm6x4XivKEGgDxE6RmshijrIhgTLVQsfuTyn3Pzrh72Qbw62HgI+P3WH/Kh+K88RU4Tecl3DRBRlmQq5f7GmiYDA+xxrCwFB3w5ZY4iQb5tHCxFy/f4K0UI08YmMW0QL4URoWRFDrHIqIoZY5X0iYoi5JyLkxEUMAfP+skJOXNQQc/2ywv7labSNoeJAv5HzyHFz517l+zl+A+8E2yCKGqJW9qLviVEi/BrOoaYBYoc4VMc9McJHgNgh4N8YZSl5YFqQPf0S9EK/HIWNAPFDwDHCvjqX12NR6gCvw/mdwBEg31fJlW8p6z68rpVvLnsj6P70mGwhapdCpAggSZIkSZIkSZIkSZIkSZIkSZIkSVLr/gL7F5yVbVr35gAAAABJRU5ErkJggg=="
+            width={98}
+            height={123}
+            opacity={0.15}
+        />
+        <path
+            fill="#0075a3"
+            d="M52 61.4c-.31-.14-.61-.28-.9-.43-2-1.08-3.35-3.13-3.96-5.32s-.54-4.51-.26-6.77c.66-5.19 2.51-10.21 5.32-14.62-6.68 4.63-12.22 11.01-15.25 18.54-3.18 7.91-3.4 16.77.04 24.57 1.87 4.06 5.98 6.87 10.74 6.87 6.53 0 11.82-5.29 11.82-11.82 0-5.02-3.13-9.31-7.55-11.03"
+        />
+        <image
+            xlinkHref="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGMAAAB7CAYAAABgvj5jAAAACXBIWXMAAAsSAAALEgHS3X78AAACi0lEQVR4nO3c3XHaQBRA4eMkz3IDUIEbwIWkylSQNGA34ApCBVSQB2mHjc2P+BG6d3W+GY3wjB80nLkrhACQJEmSJEmSJEmSJEmSJEmSJEmSpHt7mvsAJrIC1sPjv8B2xmMZ7cfcB3BnJcJm+HtLHyOFlmKsgNdh29CHeJv1iC7USowS4uewB3gfthRLFMC3uQ/gDj6HWNEvTWVLI3uMQyG2JJwKyB3jUAhIOhWQN8axEGmnAnLGOBYCEk8F5ItxKgT001C2dLLFWLO/lmgqBOSKsaK/mNvwNQQkX6IgT4z66np95H+cjAc5tTw1I0OMc8tTMzLEWFfbMemXKIgfY+xUpD95Q/wYY6YCnIzJLeZcUUSOMXYqmhE5xqraFiFqjEtDNBEuaoxLl6gmlrTvcx/AEa/VNkY37Hf0r6h2UxzU1KJOxjXST0fEyRjzpuAh6acjYowX9jG6M//7WfmEZFc9ThMlYoxLzxe1Dnimn66yTxMlYoyXartGx/7cUaJAHyN0kBZjFHWUjgRLVysf7zylvCCoLwhDvqG4hBjw9eo85NcEWrrOGCP07dulTEZRlqyQ9z+WNhkQ+D7JEmNA0LdOlhoj5FvuEWOEXM8fIWKMJj7pcY2IMZwMzS9qjEVOR9QYizxvRI0x9WSEnLyoMWDaJyzk5EWOMdUTFvYbsRFvLhU7+ptBz+xvEN2q/J7Ib+CDYDeZIseolXvbtwQpIX4N+1BTAfFj7KrtliDhQ0D8GPB/kLKsPDEuypZ+OfpDvzSFDQE5YsA+xLbal8eHwtQR3ob9B4FDQM6fxSu/trb69LhWfoHtnaD3uw/JGKN2LkaKCJIkSZIkSZIkSZIkSZIkSZIkSZIk6bH+AVaUnJXhkeHGAAAAAElFTkSuQmCC"
+            width={98}
+            height={123}
+            opacity={0.15}
+            transform="translate(29.94)"
+        />
+        <path
+            fill="#0075a3"
+            d="M81.94 61.4c-.31-.14-.61-.28-.9-.43-2-1.08-3.35-3.13-3.96-5.32s-.54-4.51-.26-6.77c.66-5.19 2.51-10.21 5.32-14.62-6.68 4.63-12.22 11.01-15.25 18.54-3.18 7.91-3.4 16.77.04 24.57 1.87 4.06 5.98 6.87 10.74 6.87 6.53 0 11.82-5.29 11.82-11.82 0-5.02-3.13-9.31-7.55-11.03"
+        />
+    </svg>
+)

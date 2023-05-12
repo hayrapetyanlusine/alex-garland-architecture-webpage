@@ -86,6 +86,13 @@ export const initialState = {
             {id: 2, src: "work-2.jpg", title: "Residential"},
             {id: 3, src: "work-3.jpg", title: "Education"},
             {id: 4, src: "work-4.jpg", title: "Hospitality"},
+        ],
+        sliderImages: [
+            {id: 1, src: "work-slide1.jpg"},
+            {id: 2, src: "work-slide2.jpg"},
+            {id: 3, src: "work-slide3.jpg"},
+            {id: 4, src: "work-slide4.jpg"},
+            {id: 5, src: "work-slide5.jpg"},
         ]
     }
 }

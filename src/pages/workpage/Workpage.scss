@@ -3,8 +3,6 @@
     padding: 54px 0px;
 
     .container {
-        height: 1000px;
-
         header {
             display: flex;
             align-items: center;
@@ -21,6 +19,74 @@
                 font-family: Cinzel;
             }
         }
+
+        main {
+            padding: 32px 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .quote {
+                max-width: 700px;
+                margin: 0 auto;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                padding: 64px 0;
+
+                .quote-icon {
+                    width: 150px;
+                    height: 120px;
+                }
+
+                .quote-text {
+                    color: #141414d5;
+                    font-size: clamp(16px, 4vw, 22px);
+                    margin: 15px 0;
+                    text-align: center;
+                }
+
+                h4 {
+                    margin: 0;
+                    font-size: clamp(14px, 4vw, 18px);
+                }
+            }
+
+            .inspiration {
+                display: flex;
+                gap: 16px;
+                justify-content: space-between;
+                padding: 32px 0;
+
+                .insp-content {
+                    color: #141414;
+                    flex-basis: 60%;
+
+                    .title {
+                        text-align: start;
+                        margin: 20px 0px;
+                        font-size: clamp(26px, 4vw, 40px);
+                    }
+
+                    p {
+                        line-height: 24px;
+                    }
+                }
+
+                .insp-img {
+                    flex-basis: 40%;
+                    height: 400px;
+
+                    img {
+                        display: block;
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
+            }
+        }
     }
 
     @media screen and (max-width: 768px) {
@@ -34,6 +100,38 @@
                     writing-mode: unset;
                     transform: rotate(0deg);
                     margin-bottom: 20px;
+                }
+            }
+
+            main {
+                .quote {
+                    padding: 16px 0;
+
+                    .quote-icon {
+                        width: 100px;
+                        height: 80px;
+                    }
+
+                    .quote-text {
+                        margin-top: 0;
+                    }
+                }
+
+                .inspiration {
+                    flex-direction: column;
+
+                    .insp-content {
+
+                        .title,
+                        p {
+                            text-align: center;
+                        }
+                    }
+
+                    .insp-img {
+                        flex-basis: unset;
+                        height: 350px;
+                    }
                 }
             }
         }
