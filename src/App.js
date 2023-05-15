@@ -21,12 +21,12 @@ function App() {
     <div className="App">
       <Routes>
         <Route path="/" element={<Layout />}>
-          <Route index element={<Homepage />} />
-          <Route path="studio" element={<Studiopage />} />
-          <Route path="work" element={<Workpage workState={state["work"]}/>} />
+          <Route index element={<Homepage homeState={state["home"]} />} />
+          <Route path="studio" element={<Studiopage studioState={state["studio"]} />} />
+          <Route path="work" element={<Workpage workState={state["work"]} />} />
           <Route path="team" element={<Teampage teamState={state["team"]} />} />
-          <Route path="careers" element={<Careerspage careersState={state["careers"]}/>} />
-          <Route path="contact" element={<Contactpage contactState={state["contact"]}/>} />
+          <Route path="careers" element={<Careerspage careersState={state["careers"]} />} />
+          <Route path="contact" element={<Contactpage contactState={state["contact"]} />} />
         </Route>
       </Routes>
     </div>

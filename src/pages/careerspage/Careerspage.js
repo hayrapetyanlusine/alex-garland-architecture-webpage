@@ -2,6 +2,7 @@ import React from 'react'
 import "./Careerspage.scss"
 import { InterestItem } from './InterestItem'
 import { ContactBtn } from '../../components/contactBtn/ContactBtn'
+import { GlassBanner } from '../../components/glassBanner/GlassBanner'
 
 export const Careerspage = ({ careersState }) => {
   return (
@@ -16,10 +17,10 @@ export const Careerspage = ({ careersState }) => {
             </p>
           </div>
           <div className='career-img'>
-            <img src={require(`../../images/${careersState.imagesUrl[0]}`)} />
+            <img className='img' src={require(`../../images/${careersState.imagesUrl[0]}`)} />
           </div>
         </div>
-        <div className='glass-banner'> <h2>Careers</h2> </div>
+        <GlassBanner title={"Careers"} />
       </header>
 
       <h2 className='title'> What is your area of interest? </h2>

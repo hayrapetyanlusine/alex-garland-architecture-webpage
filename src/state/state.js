@@ -1,6 +1,5 @@
 export const initialState = {
     nav: {
-        // img: src(""),
         menu: ["studio", "work", "team", "careers", "contact"]
     },
     careers: {
@@ -93,6 +92,27 @@ export const initialState = {
             {id: 3, src: "work-slide3.jpg"},
             {id: 4, src: "work-slide4.jpg"},
             {id: 5, src: "work-slide5.jpg"},
+        ],
+        quote: {
+            text: "We couldn't be happier with our decision to work with Alex Garland Architects. They exceeded our expectations on every level and designed a building we love being in every day.",
+            name: "- Zack Morris, Bayside High School"
+        }
+    },
+    studio: {
+        inspiration: {
+            title: "Form & function",
+            text: "Some say form should follow function, but true innovation occurs when form and function influence each other to produce something truly elegant. This is one of AGA’s guiding principles.<br /> Although perfection is unattainable, every new project renews our passion to reach for it. Determining which designs, materials, and methods will best bring our clients’ dreams to fruition is our perpetual source of inspiration and is what drives us to constantly push the limitations of what architecture can be."
+        },
+        quote: {
+            text: "Alex Garland Architects designed my new restaurant, and they surpassed my wildest dreams. They listened to me and delivered everything I wanted, and then some. Thanks, Alex Garland Architects!",
+            name: "- Jessica Day, The Griffin Restaurant & Bar"
+        }
+    },
+    home: {
+        animationImages: [
+            {id: 1, url: "home-animation1.jpg"},
+            {id: 2, url: "home-animation2.jpg"},
+            {id: 3, url: "home-animation3.jpg"},
         ]
     }
 }

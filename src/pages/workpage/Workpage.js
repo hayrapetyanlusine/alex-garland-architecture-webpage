@@ -2,9 +2,9 @@ import React from 'react'
 import './Workpage.scss'
 import { WorkGallery } from './workGallery/WorkGallery'
 import img from '../../images/inspiration.jpg'
-import { QuoteIconSvg } from '../../svg/svg'
 import { WorkCarousel } from './workCarousel/WorkCarousel'
 import { ContactBtn } from '../../components/contactBtn/ContactBtn'
+import { Quote } from '../../components/quote/Quote'
 
 export const Workpage = ({ workState }) => {
   return (
@@ -15,15 +15,7 @@ export const Workpage = ({ workState }) => {
           <WorkGallery images={workState.galleryImages} />
         </header>
         <main>
-          <div className='quote'>
-            <div className='quote-icon'>
-              <QuoteIconSvg />
-            </div>
-            <p className='quote-text'>
-              We couldn't be happier with our decision to work with Alex Garland Architects. They exceeded our expectations on every level and designed a building we love being in every day.
-            </p>
-            <h4>- Zack Morris, Bayside High School</h4>
-          </div>
+          <Quote text={workState.quote.text} name={workState.quote.name} />
 
           <div className='inspiration'>
             <div className='insp-content'>
@@ -35,7 +27,7 @@ export const Workpage = ({ workState }) => {
               </p>
             </div>
             <div className='insp-img'>
-              <img src={img} />
+              <img className='img' src={img} />
             </div>
           </div>
 

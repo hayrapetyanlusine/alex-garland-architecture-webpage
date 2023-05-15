@@ -1,0 +1,83 @@
+.animation-container {
+    position: relative;
+    padding: 32px;
+
+    .image-border {
+        position: relative;
+        border: 0;
+        transition: color 0.25s;
+        height: 70vh;
+        overflow: hidden;
+
+        &::before,
+        &::after {
+            content: '';
+            box-sizing: inherit;
+            position: absolute;
+            border: 2px solid transparent;
+        }
+
+        &::before {
+            top: 0;
+            left: 0;
+        }
+
+        &::after {
+            bottom: 0;
+            right: 0;
+        }
+
+        &.fill::before,
+        &.fill::after {
+            width: 100%;
+            height: 100%;
+        }
+
+        &.fill::before {
+            border-top-color: #141414;
+            border-right-color: #141414;
+            transition:
+                width 0.25s ease-out,
+                height 0.25s ease-out 0.25s;
+        }
+
+        &.fill::after {
+            border-bottom-color: #141414;
+            border-left-color: #141414;
+            transition:
+                border-color 0s ease-out 0.5s,
+                width 0.25s ease-out 0.5s,
+                height 0.25s ease-out 0.75s;
+        }
+
+        img {
+            opacity: 0;
+
+            &.fill {
+                opacity: 1;
+                transition: 2s all ease-in-out;
+                transform: scale(1.1);
+            }
+        }
+    }
+
+    .glass-banner {
+        bottom: 60px;
+        opacity: 0;
+        transition: 2s all ease-in-out;
+
+        &.fill {
+            opacity: 1;
+            transform: translateX(0px);
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        padding: 0 32px;
+
+        .glass-banner {
+            bottom: 50px;
+            text-align: center;
+        }
+    }
+}
