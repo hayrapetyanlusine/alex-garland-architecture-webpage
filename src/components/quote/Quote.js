@@ -26,7 +26,7 @@ const Div = styled.div`
 
     h4 {
         margin: 0;
-        font-size: clamp(14px, 4vw, 18px);
+        font-size: clamp(12px, 4vw, 18px);
     }
 
     @media screen and (max-width: 768px) { 

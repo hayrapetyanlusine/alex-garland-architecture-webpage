@@ -1,0 +1,73 @@
+.overlap-container{
+    margin: 0 auto;
+    width: 100%;
+
+    h1 {
+        color: #fafafa;
+        letter-spacing: 25px;
+        line-height: 90px;
+        font-family: Cinzel;
+        text-shadow: 4px 4px 8px rgba(20, 20, 20, .4);
+        font-size: clamp(32px, 10vw, 94px);
+        text-align: center;
+        white-space: nowrap;
+        margin: 0;
+        transition: .5s all str-index($string: "a", $substring: "s");
+        animation: writing 2s forwards;
+
+        @keyframes writing {
+            from {
+              opacity: 0;
+            }
+            to {
+              opacity: 1;
+            }
+        }
+
+        &.active {
+            opacity: 1;
+        }
+        span{
+            font-weight: normal;
+            font-size: 32px;
+            letter-spacing: 50px;
+        }
+
+        @media screen and (max-width: 1024px) {
+            letter-spacing: 20px;
+            line-height: 70px;
+            span {
+                letter-spacing: 40px;
+                font-size: 25px;
+            }
+        }
+        @media screen and (max-width: 768px) {
+            letter-spacing: 8px;
+            line-height: 60px;
+            span {
+                letter-spacing: 25px;
+            }
+        }
+        @media screen and (max-width: 540px) {
+            span {
+                letter-spacing: 10px;
+                font-size: 20px;
+            }
+        }
+    }
+
+    .overlap-item{
+        width: 100%;
+        height: 100vh;
+        position: sticky;
+        top: 0;
+        left: 0;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        transition: all 0.3s ease-in;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}

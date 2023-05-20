@@ -1,0 +1,108 @@
+.home-section {
+    padding-bottom: 16px;
+
+    main {
+        padding-top: 32px;
+        padding-bottom: 64px;
+
+        .projects {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 32px;
+            padding: 32px 0;
+
+            .project {
+                position: relative;
+
+                .proj-img {
+                    height: 300px;
+                    max-width: 400px;
+                    overflow: hidden;
+
+                    img {
+                        transition: 0.5s all;
+                    }
+
+                    &:hover {
+                        img {
+                            scale: 1.1;
+
+                        }
+                    }
+                }
+
+                .about {
+                    position: absolute;
+                    bottom: 10px;
+                    left: 0;
+                    background-color: rgba(0, 117, 163, .6);
+                    backdrop-filter: blur(5px);
+                    width: 100%;
+                    padding: 10px;
+
+                    h3,
+                    p {
+                        margin: 0;
+                        color: #fafafa;
+                    }
+                }
+
+                @media screen and(max-width: 1024px) {
+                    &:last-child {
+                        display: none;
+                    }
+                }
+
+                @media screen and(max-width: 768px) {
+                    &:last-child {
+                        display: block;
+                    }
+                }
+            }
+        }
+
+        .quote {
+            padding-top: 32px;
+        }
+
+        .home-contact {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 64px;
+
+            .home-contact-img {
+                max-width: 800px;
+            }
+
+            .home-contact-text {
+                text-align: center;
+
+                h4 {
+                    font-size: clamp(18px, 4vw, 26px);
+                    margin-bottom: 0;
+                }
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            .title {
+                margin: 32px;
+            }
+
+            .projects {
+                flex-direction: column;
+
+                .project {
+                    width: 100%;
+
+                    .proj-img {
+                        width: 100%;
+                        max-width: unset;
+                    }
+                }
+            }
+        }
+    }
+}

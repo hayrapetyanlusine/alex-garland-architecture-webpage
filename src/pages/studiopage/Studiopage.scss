@@ -9,7 +9,8 @@
             height: 400px;
 
             @media screen and (max-width: 540px) {
-                margin: 64px 0;
+                margin-top: 64px;
+                margin-bottom: 32px;
                 height: 250px;
             }
         }
