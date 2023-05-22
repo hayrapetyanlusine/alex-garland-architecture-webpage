@@ -25,8 +25,8 @@ export const initialState = {
         form: [
             {
                 id: 1,
-                DBName: "name",
-                name: "Name*",
+                name: "name",
+                title: "Name*",
                 type: "text",
                 placeholder: "Michael Corleone",
                 required: true,
@@ -34,8 +34,8 @@ export const initialState = {
             },
             {
                 id: 2,
-                DBName: "email",
-                name: "Email Address*",
+                name: "email",
+                title: "Email Address*",
                 type: "email",
                 placeholder: "mcorleone@gencooliveoil.com",
                 required: true,
@@ -43,8 +43,8 @@ export const initialState = {
             },
             {
                 id: 3,
-                DBName: "phone",
-                name: "Phone",
+                name: "phone",
+                title: "Phone",
                 type: "phone",
                 placeholder: "732-555-1234",
                 required: false,
@@ -52,8 +52,8 @@ export const initialState = {
             },
             {
                 id: 4,
-                DBName: "message",
-                name: "Message*",
+                name: "message",
+                title: "Message*",
                 type: "textarea",
                 placeholder: "We're looking forward to hearing from you",
                 required: true,
